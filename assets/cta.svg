@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="Visita procodedev.com">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="0.55" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="pill"><rect x="8" y="8" width="544" height="80" rx="40"/></clipPath>
+    <style>
+      .display { font-family: 'Space Grotesk', 'Segoe UI', Inter, Helvetica, Arial, sans-serif; }
+      .shine { animation: shine 3.5s ease-in-out infinite; }
+      @keyframes shine { 0% { transform: translateX(-200px); } 60%,100% { transform: translateX(640px); } }
+      .arrow { animation: nudge 1.6s ease-in-out infinite; }
+      @keyframes nudge { 0%,100% { transform: translateX(0); } 50% { transform: translateX(6px); } }
+    </style>
+  </defs>
+  <rect x="8" y="8" width="544" height="80" rx="40" fill="url(#grad)"/>
+  <g clip-path="url(#pill)">
+    <rect class="shine" x="0" y="0" width="140" height="96" fill="url(#shine)" transform="skewX(-20)"/>
+  </g>
+  <text x="258" y="57" class="display" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="middle">Visita procodedev.com</text>
+  <g class="arrow">
+    <path d="M430 48h34m-12-12 12 12-12 12" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

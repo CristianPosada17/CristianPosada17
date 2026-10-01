@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-label="Proceso: 01 Descubrimiento, 02 Estrategia, 03 Diseño y desarrollo, 04 Integración y lanzamiento, 05 Soporte inicial">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60A5FA"/>
+      <stop offset="0.5" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <radialGradient id="spark" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="1"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .display { font-family: 'Space Grotesk', 'Segoe UI', Inter, Helvetica, Arial, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', Consolas, 'Courier New', monospace; }
+      .travel { animation: travel 5s cubic-bezier(.6,0,.4,1) infinite; }
+      @keyframes travel { 0% { transform: translateX(0); opacity: 0; } 8% { opacity: 1; } 92% { opacity: 1; } 100% { transform: translateX(960px); opacity: 0; } }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="228" rx="22" fill="#0A1224" stroke="rgba(148,163,184,0.14)"/>
+
+  <!-- Línea -->
+  <line x1="120" y1="84" x2="1080" y2="84" stroke="rgba(148,163,184,0.18)" stroke-width="2"/>
+  <line x1="120" y1="84" x2="1080" y2="84" stroke="url(#grad)" stroke-width="2" stroke-dasharray="6 8" opacity="0.8"/>
+  <circle class="travel" cx="120" cy="84" r="16" fill="url(#spark)"/>
+
+  <!-- Nodos -->
+  <g class="mono" font-size="17" font-weight="700" text-anchor="middle">
+    <circle cx="120" cy="84" r="28" fill="#060B18" stroke="#60A5FA" stroke-width="2"/>
+    <text x="120" y="90" fill="#60A5FA">01</text>
+    <circle cx="360" cy="84" r="28" fill="#060B18" stroke="#3B82F6" stroke-width="2"/>
+    <text x="360" y="90" fill="#3B82F6">02</text>
+    <circle cx="600" cy="84" r="28" fill="#060B18" stroke="#38BDF8" stroke-width="2"/>
+    <text x="600" y="90" fill="#38BDF8">03</text>
+    <circle cx="840" cy="84" r="28" fill="#060B18" stroke="#22D3EE" stroke-width="2"/>
+    <text x="840" y="90" fill="#22D3EE">04</text>
+    <circle cx="1080" cy="84" r="28" fill="#060B18" stroke="#10B981" stroke-width="2"/>
+    <text x="1080" y="90" fill="#10B981">05</text>
+  </g>
+
+  <!-- Títulos -->
+  <g class="display" font-size="22" font-weight="700" fill="#F1F5F9" text-anchor="middle">
+    <text x="120" y="152">Descubrimiento</text>
+    <text x="360" y="152">Estrategia</text>
+    <text x="600" y="152">Diseño y</text>
+    <text x="600" y="180">desarrollo</text>
+    <text x="840" y="152">Integración y</text>
+    <text x="840" y="180">lanzamiento</text>
+    <text x="1080" y="152">Soporte inicial</text>
+  </g>
+</svg>
